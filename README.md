@@ -19,6 +19,8 @@
 
   ## [Usage]
   After initializing the application. Answer the series of questions that follows. At the end of the questions the application will generate a proper README file for you.
+  * Down below is a video link on how to use the app:
+  * https://drive.google.com/file/d/1oh4sSa724Z33PuebbSAwOqdRu191D37m/view
 
   ## [Contributors]
   Report Bugs / Suggests Enhancements
