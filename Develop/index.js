@@ -94,7 +94,7 @@ const questions = [
                 if (installInput) {
                     return true;
                 } else {
-                    console.log('Pleas provide instructions!');
+                    console.log('Please provide instructions!');
                     return false;
                 }
             }
@@ -151,13 +151,42 @@ const questions = [
             }
         }]
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {
-}
+const writeToFile = fileData => {
+    return new Promise ((resolve, reject) => {
+        fs.writeFile(`./dist/generated-README.md`, fileData, err => {
+            if (err) {
+                reject (err);
+                return;
+            }
+
+            resolve({
+                ok:true,
+                message: 'The README file has been created!'
+            });
+        });
+    });
+};
 
 // TODO: Create a function to initialize app
 function init() {
-    return inquirer.prompt(questions);
+    return inquirer.prompt(questions)
+    .then(readMeData => {
+        return readMeData;
+    })
 };
 
 // Function call to initialize app
-init();
+init()
+.then(readMeData => {
+    console.log(readMeData);
+    return generateMarkdown(readMeData);
+})
+.then(readMePage => {
+    return writeToFile(readMePage);
+})
+.then(writeFileResponse => {
+    console.log(writeFileResponse);
+})
+.catch(err => {
+    console.log(err);
+})
