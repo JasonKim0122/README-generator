@@ -58,7 +58,7 @@ function generateMarkdown(data) {
   ${data.use}
 
   ## [Contributors]
-  ${data.includeContributors}
+  ${data.contributors}
 
   ${renderLicenseSection(data.license)}
   ${renderLicenseBadge(data.license)}

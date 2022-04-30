@@ -12,27 +12,27 @@
   * [Contact-Me](#Contact-Me)
 
   ## [Description]
-  This project that I have created is a README generator. It is designed to help generate an easy to use README without having the user to worry about applying the proper syntax. This project will allow any user that needs to create a README to create one by answering a series of questions. 
+  This project that I had created address the problem of worrying about proper syntax when it comes to a README file. This project is an easy to use README generator that will help users create a proffessional README with the proper syntax. Users will just need to answer a series of questions that pertain to the README they are trying to include in their project.
 
   ## [Installation]
-  To first properly install this project. You first must clone this repo into your own. After cloning open your terminal and open the file in VS code or any code editor of your choice. Once in the root directory you can start the program by executing node.index.js
+  To install this application you just need to clone this repo into your local repo. Navigate to the root directory and initialize the application by typing 'node index.js' in your terminal.
 
   ## [Usage]
-  Below will be links on how to use this project:
+  After initializing the application. Answer the series of questions that follows. At the end of the questions the application will generate a proper README file for you.
 
   ## [Contributors]
-  false
+  Report Bugs / Suggests Enhancements
 
   
   
 
   ## [About-Me]
-  undefined
+  I am an aspiring full-stack developer currently enrolled in the SMU bootcamp. I have a BA in biochemistry and decided to pursue my passion for coding. I currently know HTML, CSS, Javascript, and node.js. Everyday I am learning new knowledge and working on various projects to increase my skillset, and I am enjoying every moment of it. I hope to one day become a developer and work on projects with others.
 
   ## [Contact-Me]
 
   If you have any questions and would like to contact me please reach out to me at the links below:
 
-  [GitHub](github.com/JasonKim0122)
+  [GitHub](https://github.com/Jasonkim0122)
 
   [Email: JasonKim0122@gmail.com](mailto:JasonKim0122@gmail.com)
