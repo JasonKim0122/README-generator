@@ -64,7 +64,7 @@ function generateMarkdown(data) {
   ${renderLicenseBadge(data.license)}
 
   ## [About-Me]
-  ${data.aboutMe}
+  ${data.about}
 
   ## [Contact-Me]
 
