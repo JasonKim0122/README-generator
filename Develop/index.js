@@ -3,9 +3,7 @@ const inquirer = require('inquirer');
 const fs =require('fs');
 const generateMarkdown = require('./utils/generateMarkdown');
 // TODO: Create an array of questions for user input
-const promoptUserQuestions = () => {
-    return inquirer
-        .prompt ([
+const questions = [
         {
             type: 'input',
             name: 'githubName',
@@ -61,13 +59,7 @@ const promoptUserQuestions = () => {
                     return false;
                 }
             }
-        }
-    ]);
-};
-
-const promptProject = () => {
-    return inquirer
-        .prompt ([
+        },
         {
             type: 'input',
             name: 'projectTitle',
@@ -157,19 +149,14 @@ const promptProject = () => {
                     return false;
                 }
             }
-        }
-    ])
-}
-
-promoptUserQuestions()
-    .then(promptProject)
-
-
+        }]
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {}
 
 // TODO: Create a function to initialize app
-function init() {}
+function init() {
+    return inquirer.prompt(questions);
+};
 
 // Function call to initialize app
 init();
